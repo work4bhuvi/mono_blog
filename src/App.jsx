@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import PostPage from "./pages/PostPage";
 import AuthPage from "./pages/AuthPage";
 import MyPosts from "./pages/MyPosts";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
