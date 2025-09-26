@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #0d0d0d;
+  --text-color: #e0e0e0;
+  --accent-color: #00ffcc;
+  --card-bg: #1a1a1a;
+  --card-border: #333;
+  --button-bg: #00b894;
+  --button-hover: #00d8b0;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--card-border);
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-family: "Fira Code", monospace;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
